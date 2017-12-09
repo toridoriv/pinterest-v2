@@ -1,0 +1,154 @@
+/**
+* Cambiando estilos de las etiquetas semánticas
+* @font-face es para agregar una nueva fuente, pueden descargar esta del
+* siguiente enlace: https://www.dafont.com/liberation-sans.font
+*/
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url('../fonts/liberation_sans/LiberationSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url('../fonts/liberation_sans/LiberationSans-Bold.ttf');
+}
+
+body {
+  font-family: "Liberation Sans", sans-serif;
+}
+
+/**
+* Paddings y márgenes
+*/
+
+.has-small-padding {
+  padding: 0.5em 0.2em;
+}
+
+/**
+* Colores
+*/
+
+.has-text-dark-red {
+  color: #BD081C;
+}
+
+.has-bg-white {
+  background-color: white;
+}
+
+/**
+* Formas
+*/
+
+a.button.is-nav-item {
+  border-radius: 999px;
+  color: #9c9c9c;
+  border-color: transparent;
+}
+
+a.button.is-nav-item.is-active {
+  color: #555555;
+}
+
+a.button.is-nav-item:hover {
+  background-color: rgba(0,0,0,0.06);
+}
+
+/**
+* Posicionamiento
+*/
+
+.is-vertically-aligned-center {
+  display: flex;
+  align-items: center;
+}
+
+.starts-at-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .tag.is-large {
+  margin-right: 1em;
+} */
+
+/**
+* Estilos específicos de elementos únicos
+*/
+
+#main-searchbar {
+  background-color: #efefef;
+}
+
+#main-searchbar::-webkit-input-placeholder {
+  color: #757575;
+  font-weight: bold;
+  font-family: "Liberation Sans", sans-serif;
+}
+
+#logo {
+  padding: 0.2em;
+}
+
+#logo:hover {
+  color: #BD081C;
+  background-color: rgba(0,0,0,0.06);
+  border-radius: 100%;
+}
+
+#navbar {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+#tags {
+  margin-top: 5em;
+  padding-left: 1em;
+  padding-right: 0.5em;
+}
+
+#tags div {
+  margin-right: 0.5em;
+}
+
+#tags .tag {
+  font-size: 0.875em;
+  padding: 2em;
+  background-color: purple;
+  color: white;
+}
+
+/* button.slick-arrow {
+  background-color: green;
+}
+
+button.slick-next.slick-arrow {
+  
+}
+
+button.slick-prev.slick-arrow {
+
+} */
+/**
+* Clases temporales que me ayudarán con el posicionamiento
+*/
+
+.columns {
+  border: 1px solid red;
+}
+
+.column {
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .has-no-padding-sides {
+    padding: 12px 0px;
+  }
+}
+
+
+/**
+* 
+*/
