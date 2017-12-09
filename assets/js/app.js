@@ -1,3 +1,12 @@
+/**
+* Mostrar gif mientras la página carga
+*/
+
+$(document).ready(function(){
+  $("#loader").fadeOut("slow");
+})
+
+
 $(document).ready(function(){
   $("#tags").slick({
     dots: true,
