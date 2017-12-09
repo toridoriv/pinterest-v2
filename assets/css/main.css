@@ -26,6 +26,10 @@ body {
   padding: 0.5em 0.2em;
 }
 
+.has-medium-padding {
+  padding: 3em;
+}
+
 /**
 * Colores
 */
@@ -117,19 +121,50 @@ a.button.is-nav-item:hover {
   padding: 2em;
   background-color: purple;
   color: white;
+  border-radius: 6px;
 }
 
-/* button.slick-arrow {
-  background-color: green;
+#modal {
+  margin-top: 5em;
+  overflow: visible;
 }
 
-button.slick-next.slick-arrow {
-  
+.item {
+  margin: 0 0 1em;
+  width: 100%;
+  padding: 0.7em;
+  border-radius: 5%;
+  color: #757575;
 }
 
-button.slick-prev.slick-arrow {
+.item:hover {
+  background-color: #efefef;
+}
 
-} */
+.item img {
+  border-radius: 5%;
+}
+
+.modal {
+  display: flex;
+  margin-top: 5em;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.modal-content {
+  background-color: white;
+}
+
+.modal.is-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
 /**
 * Clases temporales que me ayudarán con el posicionamiento
 */
@@ -140,6 +175,42 @@ button.slick-prev.slick-arrow {
 
 .column {
   border: 1px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  
+  #main-container {
+    column-count: 4;
+    column-gap: 1em;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  
+  #main-container {
+    column-count: 3;
+    column-gap: 1em;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  #main-container {
+    column-count: 2;
+    column-gap: 1em;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  
+  #main-container {
+    column-count: 1;
+    column-gap: 1em;
+  }
+
 }
 
 @media (max-width: 768px) {

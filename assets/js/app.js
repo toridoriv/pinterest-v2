@@ -8,3 +8,15 @@ $(document).ready(function(){
     variableWidth: true
   })
 });
+
+/**
+* Función que abre el modal
+*/
+
+$(document).ready(function(){
+  $(".item, .modal-background").click(function(){
+    var image = $(this).html();
+    $(".modal-content").html(image);
+    $(".modal").toggleClass("is-active");
+  })
+});
